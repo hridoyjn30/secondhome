@@ -3,152 +3,229 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Second Home Residence – ষষ্ঠ থেকে এইচএসসি শিক্ষার্থীদের আবাসিক প্রতিষ্ঠান</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>Second Home Residence – ষষ্ঠ থেকে এইচএসসি আবাসিক প্রতিষ্ঠান</title>
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f4f7fb;--surface:#fff;--ink:#1c2740;--muted:#55627c;--line:#d9e0ec;--lamp:#f2b33d;--lampink:#3a2a00;--leaf:#2b7a69;--night:#1c2740;--nightink:#eef2fa;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a2c;--surface:#1a2440;--ink:#eef2fa;--muted:#a7b2c9;--line:#2c3860;--leaf:#5fc3ab;--night:#0b1222}}
-:root[data-theme="dark"]{--bg:#121a2c;--surface:#1a2440;--ink:#eef2fa;--muted:#a7b2c9;--line:#2c3860;--leaf:#5fc3ab;--night:#0b1222}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+:root{--bg:#fffaf3;--surf:#fff;--ink:#241c4a;--mut:#5f5a80;--line:#eadfce;--c1:#ff5a6e;--c2:#18a8d8;--c3:#ffb81f;--c4:#22c39b;--c5:#6b4df0;--hero1:#2b1b78;--hero2:#6b4df0;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150f33;--surf:#211850;--ink:#f3efff;--mut:#b8b0e0;--line:#372b72}}
+:root[data-theme="dark"]{--bg:#150f33;--surf:#211850;--ink:#f3efff;--mut:#b8b0e0;--line:#372b72}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
 *,*::before,*::after{box-sizing:inherit}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hind Siliguri","Noto Sans Bengali","Kalpurush",system-ui,sans-serif;line-height:1.7;font-size:17px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif;line-height:1.7;font-size:17px}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--lamp);outline-offset:3px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
-.brand{font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px}
-.brand i{width:26px;height:26px;background:var(--lamp);border-radius:6px 6px 3px 3px;display:inline-block;clip-path:polygon(50% 0,100% 40%,100% 100%,0 100%,0 40%)}
-nav{display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
-nav a{text-decoration:none;color:var(--muted);font-weight:500}
-nav a:hover{color:var(--ink)}
-.hero{background:var(--night);color:var(--nightink);padding:64px 0 72px;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
-.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.2;margin:0 0 18px;font-weight:700}
-.hero p{font-size:19px;max-width:34em;margin:0 0 28px;color:#c9d3e8}
+:focus-visible{outline:3px solid var(--c3);outline-offset:3px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--c1),var(--c3),var(--c4),var(--c2),var(--c5)) 1;padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:12px}
+.brand{font-weight:700;font-size:19px;text-decoration:none;display:flex;gap:9px;align-items:center}
+.brand i{width:28px;height:28px;background:linear-gradient(135deg,var(--c1),var(--c3));clip-path:polygon(50% 0,100% 42%,100% 100%,0 100%,0 42%)}
+nav{display:flex;gap:16px;align-items:center;font-size:15px}
+nav a{text-decoration:none;color:var(--mut);font-weight:500}
+nav a:hover{color:var(--c1)}
+.ic{background:var(--surf);border:1.5px solid var(--line);color:var(--ink);border-radius:999px;width:40px;height:40px;font-size:18px;cursor:pointer}
+#burger{display:none}
+.hero{position:relative;overflow:hidden;background:linear-gradient(140deg,var(--hero1),var(--hero2));color:#fff;padding:70px 0 90px}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.2;margin:0 0 16px}
+#word{display:inline-block;color:var(--c3);transition:opacity .35s,transform .35s}
+#word.out{opacity:0;transform:translateY(10px)}
+.hero p{font-size:19px;max-width:33em;margin:0 0 26px;color:#e6defd}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;border:0;font:inherit;font-weight:600;cursor:pointer}
+.b1{background:var(--c3);color:#3a2800}
+.b2{border:2px solid #cfc3ff;color:#fff}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px}
-.btn.p{background:var(--lamp);color:var(--lampink)}
-.btn.s{border:1.5px solid #5d6c95;color:var(--nightink)}
-.house{width:100%;max-width:340px;justify-self:center}
-.house .win{animation:glow 3.2s ease-out 1 both}
-@keyframes glow{from{fill:#3b4466}to{fill:#f2b33d}}
-@media (prefers-reduced-motion:reduce){.house .win{animation:none;fill:#f2b33d}html{scroll-behavior:auto}}
+.blob{position:absolute;border-radius:50%;opacity:.35;filter:blur(2px);animation:fl 9s ease-in-out infinite}
+.blob.a{width:220px;height:220px;background:var(--c1);top:-60px;right:8%}
+.blob.b{width:150px;height:150px;background:var(--c4);bottom:-40px;left:10%;animation-delay:-3s}
+.blob.c{width:90px;height:90px;background:var(--c2);top:40%;right:40%;animation-delay:-6s}
+@keyframes fl{50%{transform:translateY(-22px) scale(1.06)}}
+.house{width:100%;max-width:300px;justify-self:center}
+.win{animation:lit 3s ease-out both}
+@keyframes lit{from{fill:#4a3c9c}to{fill:#ffb81f}}
+.stats{margin-top:-46px;position:relative;z-index:3}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+.stat{background:var(--surf);border-radius:16px;padding:16px;text-align:center;border-bottom:5px solid var(--c);box-shadow:0 6px 18px rgba(36,28,74,.12)}
+.stat b{display:block;font-size:34px;line-height:1.1;color:var(--c)}
+.stat span{color:var(--mut);font-size:15px}
 section{padding:60px 0}
-h2{font-size:clamp(26px,4vw,36px);line-height:1.3;margin:0 0 10px}
-.lead{color:var(--muted);max-width:40em;margin:0 0 32px}
+h2{font-size:clamp(26px,4vw,36px);margin:0 0 8px;line-height:1.3}
+.lead{color:var(--mut);max-width:40em;margin:0 0 28px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
-.card h3{margin:0 0 6px;font-size:19px}
-.card p{margin:0;color:var(--muted);font-size:16px}
-.band{background:var(--surface);border-block:1px solid var(--line)}
-.who{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-.who div{border-left:5px solid var(--leaf);padding:6px 0 6px 16px}
-.who b{display:block;font-size:20px}
-.who span{color:var(--muted);font-size:15px}
-.tl{list-style:none;margin:0;padding:0;border-left:3px solid var(--lamp)}
-.tl li{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:10px 0 10px 20px;position:relative}
-.tl li::before{content:"";position:absolute;left:-9px;top:20px;width:15px;height:15px;border-radius:50%;background:var(--lamp);border:3px solid var(--bg)}
-.band .tl li::before{border-color:var(--surface)}
-.tl time{font-weight:700;color:var(--leaf)}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s;padding:0;list-style:none;margin:0}
-.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 20px 20px 64px;position:relative}
-.steps li::before{content:counter(s,bengali);position:absolute;left:18px;top:16px;width:32px;height:32px;border-radius:50%;background:var(--leaf);color:#fff;display:grid;place-items:center;font-weight:700}
-.steps b{display:block}
-.steps span{color:var(--muted);font-size:15px}
-.contact{background:var(--night);color:var(--nightink)}
-.contact .lead{color:#c9d3e8}
-.cbox{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.cbox div{border:1px solid #3a4770;border-radius:14px;padding:18px}
-.cbox small{display:block;color:#aab7d6}
-.cbox b{font-size:19px}
-footer{padding:22px 0;font-size:14px;color:var(--muted);text-align:center}
-@media (max-width:760px){.hero .wrap{grid-template-columns:1fr}.house{max-width:230px;order:-1}.tl li{grid-template-columns:1fr;gap:0}}
+.card{background:var(--surf);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:16px;padding:22px;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card .e{font-size:30px;display:block}
+.card h3{margin:4px 0 4px;font-size:19px}
+.card p{margin:0;color:var(--mut);font-size:16px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.tab{border:2px solid var(--c5);background:transparent;color:var(--c5);border-radius:999px;padding:7px 18px;font:inherit;font-weight:600;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--c5);color:#fff}
+.pane{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:22px;max-width:640px}
+.pane h3{margin:0 0 6px;color:var(--c5)}
+.pane ul{margin:0;padding-left:20px;color:var(--mut)}
+.now{display:inline-block;background:var(--c4);color:#06362b;border-radius:999px;padding:3px 14px;font-weight:600;margin-bottom:14px}
+.tl{list-style:none;margin:0;padding:0;border-left:4px solid var(--c3)}
+.tl li{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:9px 12px 9px 20px;margin-left:-4px;border-left:4px solid transparent;border-radius:0 12px 12px 0;position:relative}
+.tl li::before{content:"";position:absolute;left:-12px;top:19px;width:16px;height:16px;border-radius:50%;background:var(--c3);border:3px solid var(--bg)}
+.tl time{font-weight:700;color:var(--c5)}
+.tl li.on{background:linear-gradient(90deg,rgba(34,195,155,.25),transparent);border-left-color:var(--c4)}
+.tl li.on::before{background:var(--c4);transform:scale(1.3)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:20px 20px 20px 66px;position:relative}
+.steps li::before{content:counter(s,bengali);position:absolute;left:18px;top:16px;width:34px;height:34px;border-radius:50%;background:var(--c);color:#fff;display:grid;place-items:center;font-weight:700}
+.steps b{display:block}.steps span{color:var(--mut);font-size:15px}
+details{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:4px 18px;margin-bottom:10px;max-width:720px}
+summary{cursor:pointer;font-weight:600;padding:10px 0}
+details[open]{border-color:var(--c2)}
+details p{margin:0 0 12px;color:var(--mut)}
+.contact{background:linear-gradient(140deg,var(--hero1),var(--hero2));color:#fff}
+.contact .lead{color:#e6defd}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.cinfo div{border:1px solid #8c79f5;border-radius:14px;padding:14px 18px;margin-bottom:12px}
+.cinfo small{display:block;color:#d3c9ff}
+form{background:var(--surf);color:var(--ink);border-radius:18px;padding:22px}
+label{display:block;font-weight:600;margin-bottom:12px;font-size:15px}
+input,select{display:block;width:100%;margin-top:4px;padding:10px 12px;font:inherit;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.b3{background:var(--c4);color:#06362b;width:100%}
+footer{text-align:center;padding:20px;font-size:14px;color:var(--mut)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media (max-width:780px){.hero .wrap,.cgrid{grid-template-columns:1fr}.house{max-width:200px;order:-1}.tl li{grid-template-columns:1fr;gap:0}
+#burger{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);flex-direction:column;align-items:flex-start;padding:14px 20px;border-bottom:1px solid var(--line)}nav.open{display:flex}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap">
-<a class="brand" href="#"><i aria-hidden="true"></i>Second Home Residence</a>
-<nav aria-label="প্রধান মেনু"><a href="#about">পরিচিতি</a><a href="#facilities">সুবিধা</a><a href="#routine">দৈনিক রুটিন</a><a href="#admission">ভর্তি</a><a href="#contact">যোগাযোগ</a></nav>
-</div></header>
+<header><div class="wrap">
+<a class="brand" href="#"><i></i>Second Home Residence</a>
+<div style="display:flex;gap:10px;align-items:center">
+<nav id="nav" aria-label="মেনু"><a href="#about">পরিচিতি</a><a href="#facilities">সুবিধা</a><a href="#routine">রুটিন</a><a href="#admission">ভর্তি</a><a href="#faq">প্রশ্নোত্তর</a><a href="#contact">যোগাযোগ</a></nav>
+<button class="ic" id="theme" aria-label="থিম বদলান">🌓</button>
+<button class="ic" id="burger" aria-label="মেনু">☰</button>
+</div></div></header>
 
-<main>
-<div class="hero"><div class="wrap">
+<div class="hero">
+<span class="blob a"></span><span class="blob b"></span><span class="blob c"></span>
+<div class="wrap">
 <div>
-<h1>ঘরের বাইরে, আরেকটি ঘর।</h1>
-<p>ষষ্ঠ শ্রেণি থেকে এইচএসসি পর্যন্ত শিক্ষার্থীদের জন্য নিরাপদ, নিয়মানুবর্তী ও যত্নশীল আবাসিক পরিবেশ। পড়াশোনা, খাওয়াদাওয়া আর বিশ্রাম—সব এক ছাদের নিচে।</p>
-<div class="btns"><a class="btn p" href="#admission">ভর্তির নিয়ম দেখুন</a><a class="btn s" href="#contact">যোগাযোগ করুন</a></div>
+<h1>ঘরের বাইরে, আরেকটি <span id="word">ঘর</span></h1>
+<p>ষষ্ঠ শ্রেণি থেকে এইচএসসি পর্যন্ত শিক্ষার্থীদের জন্য নিরাপদ, নিয়মানুবর্তী ও যত্নশীল আবাসিক পরিবেশ।</p>
+<div class="btns"><a class="btn b1" href="#admission">ভর্তির নিয়ম</a><a class="btn b2" href="#contact">যোগাযোগ করুন</a></div>
 </div>
-<svg class="house" viewBox="0 0 240 240" role="img" aria-label="জানালায় আলো জ্বলা একটি বাড়ির ছবি">
-<path d="M20 112 120 24l100 88" fill="none" stroke="#f2b33d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="40" y="108" width="160" height="106" rx="6" fill="#2a3659"/>
-<rect class="win" x="62" y="130" width="46" height="44" rx="4" fill="#f2b33d"/>
-<rect class="win" x="132" y="130" width="46" height="44" rx="4" fill="#f2b33d"/>
-<rect x="104" y="176" width="32" height="38" rx="4" fill="#161f38"/>
-<path d="M0 214h240" stroke="#5d6c95" stroke-width="3"/>
+<svg class="house" viewBox="0 0 240 240" role="img" aria-label="আলো জ্বলা বাড়ি">
+<path d="M20 112 120 24l100 88" fill="none" stroke="#ffb81f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="40" y="108" width="160" height="106" rx="6" fill="#3c2c96"/>
+<rect class="win" x="62" y="130" width="46" height="44" rx="4"/><rect class="win" x="132" y="130" width="46" height="44" rx="4"/>
+<rect x="104" y="176" width="32" height="38" rx="4" fill="#ff5a6e"/>
 </svg>
 </div></div>
 
-<section id="about"><div class="wrap">
+<div class="stats"><div class="wrap">
+<div class="stat" style="--c:var(--c1)"><b data-n="7" data-s="+">0</b><span>শ্রেণি (৬ষ্ঠ–১২শ)</span></div>
+<div class="stat" style="--c:var(--c2)"><b data-n="3">0</b><span>বেলা খাবার</span></div>
+<div class="stat" style="--c:var(--c4)"><b data-n="24" data-s="/৭">0</b><span>তত্ত্বাবধান</span></div>
+<div class="stat" style="--c:var(--c3)"><b data-n="3">0</b><span>পড়ার সেশন</span></div>
+</div></div>
+
+<section id="about"><div class="wrap rv">
 <h2>আমাদের পরিচয়</h2>
 <p class="lead">Second Home Residence একটি আবাসিক প্রতিষ্ঠান, যেখানে অভিভাবকের অনুপস্থিতিতেও শিক্ষার্থী নিজের বাড়ির মতো নিরাপদ ও গোছানো পরিবেশে থেকে পড়াশোনা করতে পারে।</p>
-<div class="who">
-<div><b>ষষ্ঠ – অষ্টম</b><span>ভিত্তি গড়ার ধাপ</span></div>
-<div><b>নবম – দশম</b><span>এসএসসি প্রস্তুতি</span></div>
-<div><b>একাদশ – দ্বাদশ</b><span>এইচএসসি প্রস্তুতি</span></div>
-</div>
-</div></section>
+<div class="grid">
+<div class="card" style="--c:var(--c1)"><span class="e">🌱</span><h3>ষষ্ঠ – অষ্টম</h3><p>ভিত্তি গড়ার ধাপ</p></div>
+<div class="card" style="--c:var(--c2)"><span class="e">📘</span><h3>নবম – দশম</h3><p>এসএসসি প্রস্তুতি</p></div>
+<div class="card" style="--c:var(--c5)"><span class="e">🎓</span><h3>একাদশ – দ্বাদশ</h3><p>এইচএসসি প্রস্তুতি</p></div>
+</div></div></section>
 
-<section id="facilities" class="band"><div class="wrap">
+<section id="facilities"><div class="wrap rv">
 <h2>আমাদের সুবিধা</h2>
 <p class="lead">একজন শিক্ষার্থীর প্রতিদিনের প্রয়োজন মাথায় রেখে সাজানো।</p>
 <div class="grid">
-<div class="card"><h3>নিরাপদ থাকার ব্যবস্থা</h3><p>পরিচ্ছন্ন রুম, নির্দিষ্ট বিছানা ও আলমারি, রাতের পাহারা।</p></div>
-<div class="card"><h3>স্বাস্থ্যসম্মত খাবার</h3><p>প্রতিদিন তিন বেলা ও নাস্তা, সাপ্তাহিক মেনু অনুযায়ী।</p></div>
-<div class="card"><h3>নির্দিষ্ট পড়ার সময়</h3><p>তত্ত্বাবধায়কের উপস্থিতিতে সকাল ও সন্ধ্যার পড়ার সেশন।</p></div>
-<div class="card"><h3>শিক্ষক ও তত্ত্বাবধায়ক</h3><p>পড়ায় আটকে গেলে সাহায্য করার জন্য সব সময় কেউ আছেন।</p></div>
-<div class="card"><h3>অভিভাবকের সঙ্গে যোগাযোগ</h3><p>নির্ধারিত সময়ে ফোনে কথা ও নিয়মিত অগ্রগতির খবর।</p></div>
-<div class="card"><h3>খেলাধুলা ও বিশ্রাম</h3><p>বিকালে খেলার সময়, শুক্রবার বিশ্রাম ও পরিচ্ছন্নতার দিন।</p></div>
-</div>
-</div></section>
+<div class="card" style="--c:var(--c1)"><span class="e">🛏️</span><h3>নিরাপদ থাকার ব্যবস্থা</h3><p>পরিচ্ছন্ন রুম, নির্দিষ্ট বিছানা ও আলমারি, রাতের পাহারা।</p></div>
+<div class="card" style="--c:var(--c3)"><span class="e">🍚</span><h3>স্বাস্থ্যসম্মত খাবার</h3><p>প্রতিদিন তিন বেলা ও নাস্তা, সাপ্তাহিক মেনু অনুযায়ী।</p></div>
+<div class="card" style="--c:var(--c2)"><span class="e">📚</span><h3>নির্দিষ্ট পড়ার সময়</h3><p>তত্ত্বাবধায়কের উপস্থিতিতে সকাল ও সন্ধ্যার পড়ার সেশন।</p></div>
+<div class="card" style="--c:var(--c5)"><span class="e">👩‍🏫</span><h3>শিক্ষক ও তত্ত্বাবধায়ক</h3><p>পড়ায় আটকে গেলে সাহায্য করার জন্য সব সময় কেউ আছেন।</p></div>
+<div class="card" style="--c:var(--c4)"><span class="e">📞</span><h3>অভিভাবকের সঙ্গে যোগাযোগ</h3><p>নির্ধারিত সময়ে ফোনে কথা ও নিয়মিত অগ্রগতির খবর।</p></div>
+<div class="card" style="--c:var(--c1)"><span class="e">⚽</span><h3>খেলাধুলা ও বিশ্রাম</h3><p>বিকালে খেলার সময়, শুক্রবার বিশ্রাম ও পরিচ্ছন্নতার দিন।</p></div>
+</div></div></section>
 
-<section id="routine"><div class="wrap">
+<section id="routine"><div class="wrap rv">
 <h2>একটি দিন যেভাবে কাটে</h2>
 <p class="lead">সময়সূচি নমুনা মাত্র; প্রতিষ্ঠানের সিদ্ধান্ত অনুযায়ী বদলাতে পারে।</p>
-<ul class="tl">
-<li><time>ভোর ৫:৩০</time><span>ঘুম থেকে ওঠা, নামাজ ও প্রস্তুতি</span></li>
-<li><time>সকাল ৬:৩০</time><span>সকালের পড়া</span></li>
-<li><time>সকাল ৮:০০</time><span>নাস্তা, তারপর স্কুল/কলেজ</span></li>
-<li><time>দুপুর ২:০০</time><span>দুপুরের খাবার ও বিশ্রাম</span></li>
-<li><time>বিকাল ৪:৩০</time><span>খেলাধুলা ও হাঁটাহাঁটি</span></li>
-<li><time>সন্ধ্যা ৬:৩০</time><span>নামাজ, এরপর সন্ধ্যার পড়া</span></li>
-<li><time>রাত ৯:৩০</time><span>রাতের খাবার</span></li>
-<li><time>রাত ১০:৩০</time><span>ঘুমের সময়</span></li>
-</ul>
+<div class="now" id="now"></div>
+<ul class="tl" id="tl"></ul>
 </div></section>
 
-<section id="admission" class="band"><div class="wrap">
+<section id="classes"><div class="wrap rv">
+<h2>শ্রেণি অনুযায়ী পড়ার ধরন</h2>
+<p class="lead">নিজের শ্রেণির ট্যাবে ক্লিক করে দেখুন।</p>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div class="pane" id="pane" role="tabpanel"></div>
+</div></section>
+
+<section id="admission"><div class="wrap rv">
 <h2>ভর্তি হবেন যেভাবে</h2>
-<p class="lead">অভিভাবক আমাদের নিয়মাবলি পড়ে সম্মতি দিলে তবেই ভর্তি সম্পন্ন হয়।</p>
+<p class="lead">অভিভাবক নিয়মাবলি পড়ে সম্মতি দিলে তবেই ভর্তি সম্পন্ন হয়।</p>
 <ol class="steps">
-<li><b>যোগাযোগ</b><span>ফোনে বা সরাসরি এসে আসন আছে কি না জানুন।</span></li>
-<li><b>নিয়মাবলি পড়া</b><span>হোস্টেলের নিয়মাবলি ও অঙ্গীকারনামা মনোযোগ দিয়ে পড়ুন।</span></li>
-<li><b>ফরম পূরণ</b><span>শিক্ষার্থীর তথ্য ও প্রয়োজনীয় কাগজপত্র জমা দিন।</span></li>
-<li><b>অঙ্গীকারনামা স্বাক্ষর</b><span>অভিভাবক স্বাক্ষর করলে আসন নিশ্চিত হয়।</span></li>
+<li style="--c:var(--c1)"><b>যোগাযোগ</b><span>ফোনে বা সরাসরি এসে আসন আছে কি না জানুন।</span></li>
+<li style="--c:var(--c2)"><b>নিয়মাবলি পড়া</b><span>হোস্টেলের নিয়মাবলি ও অঙ্গীকারনামা পড়ুন।</span></li>
+<li style="--c:var(--c4)"><b>ফরম পূরণ</b><span>শিক্ষার্থীর তথ্য ও কাগজপত্র জমা দিন।</span></li>
+<li style="--c:var(--c5)"><b>অঙ্গীকারনামা স্বাক্ষর</b><span>অভিভাবক স্বাক্ষর করলে আসন নিশ্চিত হয়।</span></li>
 </ol>
 </div></section>
 
-<section id="contact" class="contact"><div class="wrap">
-<h2>যোগাযোগ</h2>
-<p class="lead">ভর্তি বা পরিদর্শনের জন্য আমাদের সঙ্গে কথা বলুন।</p>
-<div class="cbox">
+<section id="faq"><div class="wrap rv">
+<h2>সচরাচর প্রশ্ন</h2><p class="lead">প্রশ্নে ক্লিক করলে উত্তর খুলবে।</p>
+<details><summary>অভিভাবক কখন সন্তানের সঙ্গে কথা বলতে পারবেন?</summary><p>নির্ধারিত সময়ে ফোনে কথা বলা যায়। সময়সূচি ভর্তির সময় জানানো হবে।</p></details>
+<details><summary>খাবারের মেনু কেমন?</summary><p>প্রতিদিন তিন বেলা ও নাস্তা দেওয়া হয়, সাপ্তাহিক মেনু অনুযায়ী।</p></details>
+<details><summary>ভর্তির জন্য কী কী লাগবে?</summary><p>শিক্ষার্থীর তথ্য, পূর্ববর্তী শ্রেণির কাগজপত্র এবং অভিভাবকের স্বাক্ষরিত অঙ্গীকারনামা।</p></details>
+<details><summary>দেখতে আসা যাবে?</summary><p>অবশ্যই। আগে ফোনে জানিয়ে এলে ভালো হয়।</p></details>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap rv">
+<h2>যোগাযোগ</h2><p class="lead">ফরম পূরণ করলে WhatsApp এ বার্তা তৈরি হয়ে যাবে।</p>
+<div class="cgrid">
+<div class="cinfo">
 <div><small>ঠিকানা</small><b>[আপনার ঠিকানা এখানে লিখুন]</b></div>
 <div><small>ফোন</small><b>[মোবাইল নম্বর]</b></div>
 <div><small>ইমেইল</small><b>[ইমেইল ঠিকানা]</b></div>
 </div>
-</div></section>
-</main>
+<form id="f">
+<label>শিক্ষার্থীর নাম<input id="n" required></label>
+<label>শ্রেণি<select id="c"><option>ষষ্ঠ</option><option>সপ্তম</option><option>অষ্টম</option><option>নবম</option><option>দশম</option><option>একাদশ</option><option>দ্বাদশ</option></select></label>
+<label>অভিভাবকের ফোন<input id="p" inputmode="tel" required></label>
+<button class="btn b3" type="submit">WhatsApp এ পাঠান</button>
+</form>
+</div></div></section>
 <footer>© Second Home Residence। সর্বস্বত্ব সংরক্ষিত।</footer>
+
+<script>
+var PHONE="8801XXXXXXXXX"; // এখানে নিজের নম্বর দিন, দেশের কোডসহ, যেমন 8801712345678
+var $=function(s){return document.querySelector(s)};
+var bn=function(n){return String(n).replace(/\d/g,function(d){return "০১২৩৪৫৬৭৮৯"[d]})};
+// ঘুরে ঘুরে শব্দ বদল
+var ws=["ঘর","পরিবার","ঠিকানা"],wi=0,w=$("#word");
+setInterval(function(){w.classList.add("out");setTimeout(function(){wi=(wi+1)%ws.length;w.textContent=ws[wi];w.classList.remove("out")},350)},2600);
+// মেনু ও থিম
+$("#burger").onclick=function(){$("#nav").classList.toggle("open")};
+document.querySelectorAll("nav a").forEach(function(a){a.onclick=function(){$("#nav").classList.remove("open")}});
+$("#theme").onclick=function(){var r=document.documentElement,d=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"};
+// দৈনিক রুটিন (বর্তমান সময় হাইলাইট)
+var R=[[330,"ভোর ৫:৩০","ঘুম থেকে ওঠা, নামাজ ও প্রস্তুতি"],[390,"সকাল ৬:৩০","সকালের পড়া"],[480,"সকাল ৮:০০","নাস্তা, তারপর স্কুল/কলেজ"],[840,"দুপুর ২:০০","দুপুরের খাবার ও বিশ্রাম"],[990,"বিকাল ৪:৩০","খেলাধুলা ও হাঁটাহাঁটি"],[1110,"সন্ধ্যা ৬:৩০","নামাজ, এরপর সন্ধ্যার পড়া"],[1290,"রাত ৯:৩০","রাতের খাবার"],[1350,"রাত ১০:৩০","ঘুমের সময়"]];
+$("#tl").innerHTML=R.map(function(r){return "<li><time>"+r[1]+"</time><span>"+r[2]+"</span></li>"}).join("");
+function tick(){var d=new Date(),m=d.getHours()*60+d.getMinutes(),k=R.length-1;for(var i=0;i<R.length;i++){if(m>=R[i][0])k=i}if(m<R[0][0])k=R.length-1;
+document.querySelectorAll("#tl li").forEach(function(li,i){li.classList.toggle("on",i===k)});$("#now").textContent="এখন চলছে: "+R[k][2]}
+tick();setInterval(tick,60000);
+// শ্রেণি ট্যাব
+var T=[["ষষ্ঠ – অষ্টম","ভিত্তি গড়ার ধাপ",["বাংলা, ইংরেজি ও গণিতের মূল ধারণা পাকা করা","প্রতিদিন হাতের লেখা ও পড়ার অভ্যাস","স্কুলের হোমওয়ার্কে তত্ত্বাবধায়কের সাহায্য"]],["নবম – দশম","এসএসসি প্রস্তুতি",["বিষয়ভিত্তিক নিয়মিত অধ্যায় পুনরাবৃত্তি","সাপ্তাহিক মডেল টেস্ট","বিজ্ঞান ও গণিতে অতিরিক্ত সময়"]],["একাদশ – দ্বাদশ","এইচএসসি প্রস্তুতি",["দীর্ঘ সময়ের নিরিবিলি পড়ার ব্যবস্থা","পাঠ্যসূচি ধরে পরিকল্পিত রিভিশন","ভর্তি পরীক্ষার প্রস্তুতিতে দিকনির্দেশনা"]]];
+function show(i){document.querySelectorAll(".tab").forEach(function(b,j){b.setAttribute("aria-selected",i===j)});var t=T[i];$("#pane").innerHTML="<h3>"+t[0]+" · "+t[1]+"</h3><ul>"+t[2].map(function(x){return "<li>"+x+"</li>"}).join("")+"</ul>"}
+$("#tabs").innerHTML=T.map(function(t,i){return '<button class="tab" role="tab" data-i="'+i+'">'+t[0]+"</button>"}).join("");
+document.querySelectorAll(".tab").forEach(function(b){b.onclick=function(){show(+b.dataset.i)}});show(0);
+// স্ক্রলে দেখা দেওয়া ও সংখ্যা গোনা
+function count(el){var n=+el.dataset.n,s=el.dataset.s||"",t=0,id=setInterval(function(){t++;el.textContent=bn(Math.round(n*t/30))+s;if(t>=30)clearInterval(id)},30)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll(".rv").forEach(function(x){io.observe(x)});
+var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.querySelectorAll("b").forEach(count);io2.unobserve(e.target)}})});
+io2.observe($(".stats"));
+// WhatsApp ফরম
+$("#f").onsubmit=function(e){e.preventDefault();var m="আসসালামু আলাইকুম। আমি Second Home Residence এ ভর্তির বিষয়ে জানতে চাই।\nশিক্ষার্থী: "+$("#n").value+"\nশ্রেণি: "+$("#c").value+"\nঅভিভাবকের ফোন: "+$("#p").value;window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(m),"_blank")};
+</script>
 </body>
 </html>
